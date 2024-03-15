@@ -1,10 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { ThemeProvider, DEFAULT_THEME } from '@zendeskgarden/react-theming'
-import { Grid, Row, Col } from '@zendeskgarden/react-grid'
-import { UnorderedList } from '@zendeskgarden/react-typography'
 import I18n from '../../javascripts/lib/i18n'
 import { resizeContainer, escapeSpecialChars as escape } from '../../javascripts/lib/helpers'
+import Main from './main'
 
 const MAX_HEIGHT = 1000
 const API_ENDPOINTS = {
@@ -38,25 +37,7 @@ class App {
 
     render(
       <ThemeProvider theme={{ ...DEFAULT_THEME }}>
-        <Grid>
-          <Row>
-            <Col data-test-id='sample-app-description'>
-              Hi {escape(currentUser.name)}, this is a sample app
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <span>{I18n.t('default.organizations')}:</span>
-              <UnorderedList data-test-id='organizations'>
-                {organizations.map(organization => (
-                  <UnorderedList.Item key={`organization-${organization.id}`} data-test-id={`organization-${organization.id}`}>
-                    {escape(organization.name)}
-                  </UnorderedList.Item>
-                ))}
-              </UnorderedList>
-            </Col>
-          </Row>
-        </Grid>
+        <Main></Main>
       </ThemeProvider>,
       appContainer
     )

@@ -7,6 +7,7 @@ Based on ZCLI scaffold provided by Zendesk under the Apache 2.0 license.
 - Jest removed as dependency + related config files.
 - Tailwind included.
 - Default icons changed to Appamondo logo.
+- main.js module included to separate Zendesk functionality from internal app, replacing example app
 
 find original information [here](https://github.com/zendesk/app_scaffolds)
 
