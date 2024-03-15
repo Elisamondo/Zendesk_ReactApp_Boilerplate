@@ -12,7 +12,7 @@ find original information [here](https://github.com/zendesk/app_scaffolds)
 
 ## How to Run + Requirements
 
-- Running locally requires a live Zendesk instance accessible in the browser.
+- Running locally requires a live Zendesk instance appended with ```?zcli_apps=true``` in URL
 - NPM is the expected package manager but alternative such as Yarn will work with some adjustment
 - Node 18 or greater expected
 
