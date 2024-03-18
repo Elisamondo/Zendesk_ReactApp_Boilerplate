@@ -3,11 +3,12 @@
   },
   "body": {
     "user": {
-      "name": "Jimothy"
+      "name": "Jimothy",
+      "age": 88
       },
     "site":{
       "name": "placeholder",
-      "knownIssues": ["!critical boiler exploded", "gate doesn't work"]
+      "known Issues": ["!important boiler exploded", "gate doesn't work"]
     }
   }
 }

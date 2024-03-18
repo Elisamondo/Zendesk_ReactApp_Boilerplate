@@ -7,7 +7,7 @@ import mock1 from '/src/JSONmocks/mock1'
 export default function Main() {
 
   let [display, setDisplay] = useState(false)
-  let body
+  let [body, setBody] = useState()
   /*renders JSON into viewable component
   does not discriminate or manipulate JSON with a valid
   .body key pair 
@@ -15,12 +15,12 @@ export default function Main() {
   
   useEffect(() => {
     displayJSON(mock1)
-  })
+  }, [])
 
   function displayJSON(JSONObject){
     try{
       // extract key pairs from JSON
-      body = (Object.entries(JSONObject.body))
+      setBody(Object.entries(JSONObject.body))
       setDisplay(true)
     }
     catch(e){
