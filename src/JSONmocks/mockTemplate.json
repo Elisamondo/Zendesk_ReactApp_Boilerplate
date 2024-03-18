@@ -1,0 +1,13 @@
+{
+  "head": {
+  },
+  "body": {
+    "user": {
+      "name": "placeholder"
+      },
+    "site":{
+      "name": "placeholder",
+      "known issues": {}
+    }
+  }
+}

@@ -37,7 +37,7 @@ class App {
 
     render(
       <ThemeProvider theme={{ ...DEFAULT_THEME }}>
-        <Main/>
+        <Main />
       </ThemeProvider>,
       appContainer
     )

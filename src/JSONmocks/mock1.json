@@ -1,0 +1,13 @@
+{
+  "head": {
+  },
+  "body": {
+    "user": {
+      "name": "Jimothy"
+      },
+    "site":{
+      "name": "placeholder",
+      "knownIssues": ["!critical boiler exploded", "gate doesn't work"]
+    }
+  }
+}
