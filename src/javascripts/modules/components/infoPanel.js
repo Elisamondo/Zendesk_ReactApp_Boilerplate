@@ -6,7 +6,7 @@ export default function infoPanel({body}) {
   let mappedBody = []
 
   body.map(key => (
-    console.log("my name is key: " + key),
+    console.log(`my name is key: ${key}`),
     createHeader(key[0], true),
     Object.entries(key[1]).map(content => (
       console.log(`my name is content: ${content}`),
@@ -23,13 +23,9 @@ export default function infoPanel({body}) {
       mappedBody.push(<h2>{header}</h2>)
     }
     else{
-      return(
-      createElement('h3',
-      {className: 'header'},
-      header)
-      )
+      mappedBody.push(<h3>{header}</h3>)
     }
-  }
+  } 
   //key value array into list
   function createList(list){
     
@@ -38,14 +34,14 @@ export default function infoPanel({body}) {
     ))
 
     return(
-      createElement('ul',
-      {classname: 'list'},
-      listItems)
+      mappedBody.push(<ul>{listItems}</ul>)
     )
   }
   //key value string/number into article
-  function createArticle(){
-    console.log("Create article is WIP")
+  function createArticle(article){
+    return(
+      mappedBody.push(<article>{article}</article>)
+    )
   }
   //key value string with important flag into modal
   function createModal(){
@@ -57,6 +53,6 @@ export default function infoPanel({body}) {
   )
 
   return (
-    {display}
+    display
   )
 }
