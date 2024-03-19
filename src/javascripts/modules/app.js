@@ -5,7 +5,7 @@ import I18n from '../../javascripts/lib/i18n'
 import { resizeContainer, escapeSpecialChars as escape } from '../../javascripts/lib/helpers'
 import Main from './main'
 
-const MAX_HEIGHT = 1000
+const MAX_HEIGHT = 2000
 const API_ENDPOINTS = {
   organizations: '/api/v2/organizations.json'
 }
@@ -37,7 +37,7 @@ class App {
 
     render(
       <ThemeProvider theme={{ ...DEFAULT_THEME }}>
-        <Main/>
+        <Main />
       </ThemeProvider>,
       appContainer
     )
