@@ -8,7 +8,7 @@
       },
     "site":{
       "name": "placeholder",
-      "known Issues": ["!important boiler exploded", "gate doesn't work"]
+      "Issues": ["!important boiler exploded", "gate doesn't work"]
     }
   }
 }

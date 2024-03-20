@@ -35,6 +35,10 @@ class App {
 
     const appContainer = document.querySelector('.main')
 
+    function modal(){
+      
+    }
+
     render(
       <ThemeProvider theme={{ ...DEFAULT_THEME }}>
         <Main />
