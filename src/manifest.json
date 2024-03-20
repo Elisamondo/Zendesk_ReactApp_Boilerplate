@@ -1,5 +1,6 @@
 {
   "name": "Appamondo Zendesk App Boilerplate",
+  "signedUrls": true,
   "author": {
     "name": "Elisamondo",
     "email": "Elisa@appamondo.com"
