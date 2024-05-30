@@ -49,5 +49,16 @@ describe('Example App', () => {
         })
       })
     })
+
+    it('successfully retrieve main div', () => {
+      CLIENT.request = jest.fn().mockReturnValueOnce(Promise.resolve(ORGANIZATIONS))
+      CLIENT.invoke = jest.fn().mockReturnValue(Promise.resolve({}))
+
+      const app = new App(CLIENT, {})
+      app.initializePromise.then(() => {
+        expect(document.getElementById("main"))
+      })
+
+    })
   })
 })
