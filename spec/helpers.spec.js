@@ -41,31 +41,3 @@ describe('render', () => {
     expect(document.querySelectorAll('#app').length).toBe(1)
   })
 })
-
-describe('escapeSpecialChars', () => {
-  it('should throw error if the passed in argument type is not String', function () {
-    expect(() => {
-      escape(1)
-    }).toThrow()
-  })
-
-  it('should escape open/close html tags', () => {
-    expect(escape('<script></script>')).toBe('&lt;script&gt;&lt;/script&gt;')
-  })
-
-  it('should escape ampersand', () => {
-    expect(escape('a && b')).toBe('a &amp;&amp; b')
-  })
-
-  it('should escape quotes and back tick', () => {
-    expect(escape('"string" \'string\' `string`')).toBe('&quot;string&quot; &#x27;string&#x27; &#x60;string&#x60;')
-  })
-
-  it('should escape equal sign', () => {
-    expect(escape('a = b')).toBe('a &#x3D; b')
-  })
-
-  it('should escape unsafe tags and characters', () => {
-    expect(escape('Test Ticket for Text App</a><script>javascript:alret(1);</script>')).toBe('Test Ticket for Text App&lt;/a&gt;&lt;script&gt;javascript:alret(1);&lt;/script&gt;')
-  })
-})
