@@ -28,3 +28,11 @@ find original information [here](https://github.com/zendesk/app_scaffolds)
 
 **Testing**
 ```npm test```
+
+## Notes on testing
+
+Any integration testing from App.spec.js **must** include the following lines of code:
+```CLIENT.request = jest.fn().mockReturnValueOnce(Promise.resolve(ORGANIZATIONS))```
+```CLIENT.invoke = jest.fn().mockReturnValue(Promise.resolve({}))```
+and be inside the "example app" describe or integration testing is not possible, or at least much more difficult
+without the above lines, the app will fail to initialise due to an unfulfilled promise
