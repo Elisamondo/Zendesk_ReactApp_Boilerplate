@@ -24,8 +24,7 @@ describe('Example App', () => {
   })
 
   describe('Rendering', () => {
-    //why would you write = null? an empty declaration is always null?
-    let appContainer = null
+    let appContainer
 
     beforeEach(() => {
       appContainer = document.createElement('section')
