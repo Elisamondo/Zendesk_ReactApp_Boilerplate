@@ -24,6 +24,7 @@ describe('Example App', () => {
   })
 
   describe('Rendering', () => {
+    //why would you write = null? an empty declaration is always null?
     let appContainer = null
 
     beforeEach(() => {
@@ -56,7 +57,7 @@ describe('Example App', () => {
 
       const app = new App(CLIENT, {})
       app.initializePromise.then(() => {
-        expect(document.getElementById("main"))
+        expect(document.getElementById("main")).toBeTruthy()
       })
 
     })

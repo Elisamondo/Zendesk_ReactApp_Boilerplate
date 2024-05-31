@@ -58,9 +58,9 @@ class I18n {
 
   loadTranslations (locale = 'en') {
     translations = this.tryRequire(locale) ||
-                   this.tryRequire(locale.replace(/-.+$/, '')) ||
-                   translations ||
-                   this.tryRequire('en')
+                  this.tryRequire(locale.replace(/-.+$/, '')) ||
+                  translations ||
+                  this.tryRequire('en')
   }
 }
 
