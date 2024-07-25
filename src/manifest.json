@@ -1,11 +1,11 @@
 {
-  "name": "Appamondo Zendesk App Boilerplate",
+  "name": "$APPNAME",
   "author": {
-    "name": "Elisamondo",
-    "email": "Elisa@appamondo.com"
+    "name": "Appamondo",
+    "email": "help@appamondo.com"
   },
   "defaultLocale": "en",
-  "private": true,
+  "private": "$PRIVATE",
   "location": {
     "support": {
       "ticket_sidebar": {
