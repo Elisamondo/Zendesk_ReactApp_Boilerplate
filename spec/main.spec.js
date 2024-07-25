@@ -17,4 +17,4 @@ describe("main div", () => {
   it("retrieve main component without App container", () => {
     expect(body).toBeTruthy()
   })
-})
+}) 
