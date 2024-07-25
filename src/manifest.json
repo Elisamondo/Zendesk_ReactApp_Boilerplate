@@ -5,7 +5,7 @@
     "email": "help@appamondo.com"
   },
   "defaultLocale": "en",
-  "private": "$PRIVATE",
+  "private": "true",
   "location": {
     "support": {
       "ticket_sidebar": {
