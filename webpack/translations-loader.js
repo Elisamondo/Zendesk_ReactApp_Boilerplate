@@ -65,4 +65,4 @@ function TranslationsLoader (content) {
   return `module.exports = ${JSON.stringify(compiledTranslations)}`
 }
 
-module.exports = TranslationsLoade
+module.exports = TranslationsLoader
