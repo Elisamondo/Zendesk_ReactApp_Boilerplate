@@ -1,10 +1,10 @@
 {
   "app": {
-    "name": "Example App",
+    "name": "Boilerplate App",
     "short_description": "Short Description",
     "long_description": "Long Description",
     "installation_instructions": "Configure the following app settings, then click Install:...",
-    "title": "Example App"
+    "title": "Boilerplate App"
   },
   "default": {
     "organizations": "organizations"
