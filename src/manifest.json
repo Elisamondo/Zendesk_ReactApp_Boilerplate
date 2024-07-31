@@ -2,7 +2,7 @@
   "name": "$APPNAME",
   "author": {
     "name": "Appamondo",
-    "email": "help@appamondo.com"
+    "email": "help@appamondo.com" 
   },
   "defaultLocale": "en",
   "private": "true",
