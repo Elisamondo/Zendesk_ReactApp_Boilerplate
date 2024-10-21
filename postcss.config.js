@@ -1,6 +1,11 @@
 module.exports = {
-  plugins: [
-    require('postcss-preset-env'),
-    require('postcss-import')
-  ]
+  plugins: {
+    'postcss-import': {},
+    tailwindcss: {},
+    autoprefixer: {},
+    "postcss-inline-svg": {
+      "path": "node_modules/@zendeskgarden/svg-icons/src"
+    }
+  }
 }
+
