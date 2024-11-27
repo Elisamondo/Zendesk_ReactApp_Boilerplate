@@ -5,6 +5,7 @@ Based on ZCLI scaffold provided by Zendesk under the Apache 2.0 license.
 **Changes made from original scaffold:**
 
 - Tailwind included.
+- Zendesk Garden Components implementation fixes
 - Default icons changed to Appamondo logo.
 - main.js module included to separate Zendesk functionality from internal app, replacing example app
 - spec file included for main.js, some tests for ZAF Client functions removed.
